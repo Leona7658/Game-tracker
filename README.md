@@ -16,8 +16,10 @@
 
 
 
-## Section 1
+## Home
 This game tracker website helps to keep track of your gaming history, including time, personal rating, screenshots, cover images, background image and estimated play times. For which User can record time manually by inserting dates and time or click record time directly. Moreover, user are able to crop images that they have uploaded. 
+
+Adding Steam games by providing Steam API and Steam URL, this website will fetch the cover image and game name then display on the main page and sidebar. 
 
 User are allowed to edit their profiles, including avatar, username, password.
 
@@ -25,25 +27,32 @@ User login and register are included.
 
 ![Home](demo-images/home.png)
 
-## Section 2
+## Login/Register
+- Register
 ![Register](demo-images/register.png)
+- Login
 ![Login](demo-images/login.png)
 
 
-## Section 3
+## Main Page
 ![Main](demo-images/main.png)
 
-## Section 4
+## Edit Game
+- Edit game by clicking "Edit Toggle" to start 
 ![Edit](demo-images/edit.png)
+- Crop images 
 ![Image](demo-images/crop.png)
 
-## Section 5
+## Profile
 ![Profile](demo-images/profile.png)
 ![Profile-Edit](demo-images/profile-edit.png)
 
-## Section 6
+## Add Game
+- Sidebar and Dropdown
 ![Sidebar](demo-images/sidebar.png)
+- Add Steam Games using the Steam API and Steam URL 
 ![Steam](demo-images/steam.png)
+- OR Manually add game
 ![Manually-Add](demo-images/manual.png)
 
 
