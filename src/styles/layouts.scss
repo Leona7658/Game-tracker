@@ -1,0 +1,229 @@
+@use "vuetify/styles";
+@import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css';
+$box-shadow: 1px 0 20px rgb(0 0 0 / 8%);
+$border-radius: 20px;
+$btn-font-weight: 400 !default;
+$btn-letter-spacing : 0 !default;
+
+// override
+html {
+  height: var(--app-height);
+  max-width: 100vw;
+  margin: 0 auto;
+  overflow-y: hidden;
+
+  .elevation-10 {
+    box-shadow: $box-shadow !important;
+  }
+
+  .v-card-text {
+    padding: 30px;
+  }
+
+  .v-card-header {
+    padding: 30px 30px 0.625rem;
+  }
+
+  .v-card-actions {
+    padding: 0.625rem 30px 30px;
+  }
+
+  .v-card {
+    border-radius: $border-radius;
+    width: 100%;
+  }
+
+  .v-btn {
+    text-transform: capitalize;
+    letter-spacing: $btn-letter-spacing;
+  }
+
+  .v-btn-group .v-btn {
+    height: inherit !important;
+  }
+
+  .v-navigation-drawer__scrim.fade-transition-leave-to {
+    display: none;
+  }
+
+  .theme-carousel .v-carousel__progress {
+    position: absolute;
+  }
+
+  .v-theme--light,
+  .v-theme--dark {
+    --v-theme-on-warning: 255, 255, 255;
+    --v-theme-on-info: 255, 255, 255;
+  }
+
+  .v-card.w-auto {
+    width: auto !important;
+  }
+}
+
+// container
+.v-main {
+  min-height: var(--app-height);
+}
+
+.v-theme--light {
+  .v-card .title {
+    color: rgba(0, 0, 0, 0.87);
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.page-wrapper {
+  padding: 30px;
+  max-width: 1300px;
+}
+
+$sizes: (
+  "display-1": 44px,
+  "display-2": 40px,
+  "display-3": 30px,
+  "h1": 36px,
+  "h2": 30px,
+  "h3": 21px,
+  "h4": 18px,
+  "h5": 16px,
+  "h6": 14px,
+  "text-10": 10px,
+  "text-13": 13px,
+  "text-18": 18px,
+  "text-20": 20px,
+  "text-24": 24px,
+  "body-text-1": 10px,
+);
+
+@each $pixel,
+$size in $sizes {
+  .#{$pixel} {
+    font-size: $size;
+    line-height: $size + 10;
+  }
+}
+
+.feather-sm {
+  width: 20px;
+  height: 20px;
+  display: unset !important;
+}
+
+.customizer-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+
+.fixed-width {
+  max-width: 1300px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100vh {
+  height: var(--app-height);
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.border-right {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+// sidebar
+.leftSidebar {
+  border-right: 0;
+}
+
+//.scrollnavbar {
+//  height: calc(var(--app-height) - 100px);
+//  .v-list--one-line {
+//    .smallCap {
+//      padding: 0px;
+//      font-size: 14px;
+//    }
+//    .v-list-group__items .v-list-item,
+//    .v-list-item {
+//      padding-inline-start: 12px !important;
+//      padding-left: 12px;
+//      .v-list-item__prepend > .v-icon {
+//        margin-inline-end: 15px;
+//      }
+//    }
+//    .v-list-group__items .v-list-item .v-avatar.v-avatar--density-default,
+//    .v-avatar.v-avatar--density-default {
+//      width: 20px;
+//      height: 34px;
+//    }
+//    .first-level-item .v-icon--size-default {
+//      font-size: 1rem;
+//    }
+//    .v-list-item--active {
+//      background: rgb(var(--v-theme-secondary));
+//      color: white !important;
+//    }
+//    .v-theme--dark.bg-white {
+//      background: #212121;
+//    }
+//  }
+//}
+@media only screen and (min-width: 1170px) {
+  .mini-sidebar {
+    .logo {
+      width: 40px;
+      overflow: hidden;
+    }
+
+    .v-navigation-drawer--expand-on-hover:hover {
+      .logo {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 960x) {
+  .mini-sidebar {
+    .v-navigation-drawer {
+      width: 100% !important;
+      z-index: 100 !important;
+    }
+  }
+
+  .collapse-btn {
+    z-index: 999 !important;
+  }
+
+  .searchinput {
+    z-index: 1000;
+  }
+}
+
+// header
+.searchinput {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.sidebarLogo {
+  margin-top: 55px;
+  max-width: 200px;
+  max-height: 200px;
+  object-position: center;
+}

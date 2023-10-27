@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  width: 100vw;
+  height: var(--app-height);
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+.el-header {
+  height: 10vh !important;
+}
+
+.el-footer {
+  height: 5vh !important;
+
+}
+
+.user-container {
+  background-color: #36393F;
+  height: var(--app-height);
+}

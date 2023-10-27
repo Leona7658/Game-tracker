@@ -1,0 +1,62 @@
+.user-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+el-row {
+    margin-bottom: 2vh;
+}
+
+.nickname {
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: auto;
+    margin-bottom: 40px;
+}
+
+.imgBox {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+
+.editBtn {
+    background: grey;
+    border-radius: 30px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.contentBox {
+    align-items: stretch;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-items: auto;
+    margin-bottom: 20px;
+}
+
+.detail {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.inputNickname {
+    margin-top: 10px;
+    margin-left: -10px;
+    display: block;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.detailBottom {
+    font-size: 0.8rem;
+    align-items: auto;
+    margin-bottom: 60px;
+}
