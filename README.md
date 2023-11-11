@@ -7,12 +7,12 @@
 - Using Rest API to fetch and update data
 
 ## Table of Contents
-- [Home](#section-1)
-- [Login/Register](#section-2)
-- [Main Page](#section-3)
-- [Edit Game](#section-4)
-- [Profile](#section-5)
-- [Add Game](#section-6)
+- [Home](#home)
+- [Login/Register](#login/register)
+- [Main Page](#main-page)
+- [Edit Game](#edit-game)
+- [Profile](#profile)
+- [Add Game](#add-game)
 
 
 
