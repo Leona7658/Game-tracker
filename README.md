@@ -8,7 +8,7 @@
 
 ## Table of Contents
 - [Home](#home)
-- [Login/Register](#login/register)
+- [Sign Up](#sign-up)
 - [Main Page](#main-page)
 - [Edit Game](#edit-game)
 - [Profile](#profile)
@@ -27,7 +27,7 @@ User login and register are included.
 
 ![Home](demo-images/home.png)
 
-## Login/Register
+## Sign Up
 - Register
 ![Register](demo-images/register.png)
 - Login
